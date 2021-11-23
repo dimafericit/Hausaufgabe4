@@ -1,6 +1,8 @@
 package main.controller;
 
 
+import main.Exceptions.StudentOrCourseDoesNotExistException;
+import main.Exceptions.StudentalreadyeonrolledException;
 import main.model.Course;
 import main.model.Student;
 import main.repository.CourseRepository;
@@ -57,18 +59,18 @@ public class Controller {
             }
 
         if (cursaux == null || studentaux == null)
-            throw new Exception("Student or Course doesn't exist");
+            throw new StudentOrCourseDoesNotExistException("Student or Course doesn't exist");
 
         if (studentaux.getEnrolledcourse().contains(cursaux.getCourseid()))
-            throw new Exception("Student already enrolled");
+            throw new StudentalreadyeonrolledException("Student already enrolled");
 
         if (cursaux.free() && ((cursaux.getCredits()+studentaux.getCredits()) <= 30)){
             cursaux.addStudent(studid);
             studentaux.addCourse(cursid);
             studentaux.setCredits(studentaux.getCredits() + cursaux.getCredits());
         }
-        else throw new Exception("Course doesn't have free places or Student dosen't " +
-                "have credits left");
+        else throw new Exception("Course doesn't have free places or Student " +
+                "doesn't have credits left");
     }
 
 
