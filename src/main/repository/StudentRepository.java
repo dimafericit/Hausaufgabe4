@@ -105,7 +105,7 @@ public class StudentRepository extends InMemoryRepository<Student> {
     /**
      * function that sorts the student list in ascending order
      */
-    public void Studentsort(){
+    public void sort(){
         repoList.sort(Student::compareTo);
     }
 

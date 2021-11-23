@@ -139,4 +139,31 @@ public class Controller {
     public StudentRepository getAllStudenten() {
         return studenten;
     }
+
+    public void sortStudents(){
+        studenten.sort();
+    }
+
+    public void sortCourses(){
+        course.sort();
+    }
+
+    public void printStudents(){
+        studenten.print();
+    }
+
+    public void printCourses(){
+        course.print();
+    }
+
+    public List<Student> filterStudents(){
+        List<Student> students = studenten.getAll();
+        return students.stream().filter(stud -> stud.getCredits() > 0).toList();
+    }
+
+    public List<Course> filterCourses(){
+        List<Course> courses = course.getAll();
+        return courses.stream().filter(curs -> curs.getCredits() == 6).toList();
+    }
+
 }

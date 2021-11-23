@@ -9,5 +9,5 @@
   "vorname" : "Burlac",
   "studentid" : 10002,
   "credits" : 0,
-  "enrolledcourse" : [ ]
+  "enrolledcourse" : [ 10003, 10004 ]
 } ]

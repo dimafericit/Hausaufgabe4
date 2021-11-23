@@ -46,7 +46,7 @@ public class Student extends Person{
      * @param courseid Course object the user wants to add
      */
     public void addCourse(long courseid){
-        this.enrolledcourse.add(courseid);;
+        this.enrolledcourse.add(courseid);
     }
 
     /**
@@ -63,8 +63,8 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "Student{"  + studentid  + " " + this.getName() + " " + this.getVorname() +
-                 enrolledcourse + '}';
+        return "Student{"  + studentid  + " " + this.getName() + " " + this.getVorname()
+         + "Credits: " +   credits     + ' ' + enrolledcourse + '}';
     }
 
     public List<Long> getEnrolledcourse() {

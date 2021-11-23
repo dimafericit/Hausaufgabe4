@@ -78,6 +78,7 @@ public class Course {
     @Override
     public String toString() {
         return "Course{" +
+                "id='" + courseid + '\'' +
                 "name='" + name + '\'' +
                 ", teacher=" + teacher +
                 ", maxenrolled=" + maxenrolled +

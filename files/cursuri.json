@@ -3,20 +3,20 @@
   "name" : "DB",
   "teacher" : "",
   "maxenrolled" : 10,
-  "enrolledstudents" : [ ],
+  "enrolledstudents" : [ 10002 ],
   "credits" : 0
 }, {
   "courseid" : 10004,
   "name" : "MAP",
   "teacher" : "",
   "maxenrolled" : 15,
-  "enrolledstudents" : [ ],
+  "enrolledstudents" : [ 10002 ],
   "credits" : 0
 }, {
   "courseid" : 10005,
   "name" : "fp",
   "teacher" : "  ",
   "maxenrolled" : 6,
-  "enrolledstudents" : [ 10001 ],
+  "enrolledstudents" : [ ],
   "credits" : 6
 } ]

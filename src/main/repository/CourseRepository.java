@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import main.model.Course;
-import main.model.Student;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -88,7 +87,7 @@ public class CourseRepository extends InMemoryRepository<Course> implements File
     }
 
     public void sort(){
-        repoList.sort(Course::compareTo);
+        this.repoList.sort(Course::compareTo);
     }
 
 }
