@@ -1,0 +1,22 @@
+[ {
+  "courseid" : 10003,
+  "name" : "DB",
+  "teacher" : "",
+  "maxenrolled" : 10,
+  "enrolledstudents" : [ ],
+  "credits" : 0
+}, {
+  "courseid" : 10004,
+  "name" : "MAP",
+  "teacher" : "",
+  "maxenrolled" : 15,
+  "enrolledstudents" : [ ],
+  "credits" : 0
+}, {
+  "courseid" : 10005,
+  "name" : "fp",
+  "teacher" : "  ",
+  "maxenrolled" : 6,
+  "enrolledstudents" : [ 10001 ],
+  "credits" : 6
+} ]

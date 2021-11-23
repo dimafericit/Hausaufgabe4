@@ -1,0 +1,13 @@
+[ {
+  "name" : "Dima",
+  "vorname" : "Burlac",
+  "studentid" : 10001,
+  "credits" : 6,
+  "enrolledcourse" : [ 10003, 10005 ]
+}, {
+  "name" : "Dimitri",
+  "vorname" : "Burlac",
+  "studentid" : 10002,
+  "credits" : 0,
+  "enrolledcourse" : [ ]
+} ]
